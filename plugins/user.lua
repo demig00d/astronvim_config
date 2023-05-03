@@ -18,7 +18,12 @@ return {
       vim.g.gruvbox_material_enable_italic = 1
     end
   },
-  { "mg979/vim-visual-multi" },
+  {
+    "mg979/vim-visual-multi",
+    keys = {
+      { "<C-n>", mode = { "n", "v" } },
+    }
+  },
   {
     "echasnovski/mini.move",
     version = '*',
