@@ -18,6 +18,10 @@ return {
       vim.g.gruvbox_material_enable_italic = 1
     end
   },
+  { "shaunsingh/solarized.nvim",
+    lazy = false,
+    priority = 1000,
+  },
   {
     "mg979/vim-visual-multi",
     keys = {
