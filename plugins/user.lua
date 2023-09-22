@@ -44,5 +44,12 @@ return {
     dependencies = "nvim-treesitter/nvim-treesitter",
     ft = "markdown",
   },
-
+  {
+    "scalameta/nvim-metals",
+    dependencies  =  "nvim-lua/plenary.nvim"
+  },
+  {
+    "memgraph/cypher.vim",
+    ft = "cypher"
+  }
 }

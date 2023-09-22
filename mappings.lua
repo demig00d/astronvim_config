@@ -15,7 +15,12 @@ return {
     ["<leader>j"] = { "<cmd>bp<CR>", desc = "Previous tab" },
     ["<leader>;"] = { "<cmd>bn<CR>", desc = "Next tab" },
 
+
+    ["<leader>w"] = { function() require("astronvim.utils.buffer").close() end, desc = "Close buffer" },
+    ["<leader>W"] = { function() require("astronvim.utils.buffer").close(0, true) end, desc = "Force close buffer" },
+
     ["<leader>s"] = { "<cmd>w<cr>", desc = "Save" },
+    -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
 
     ["<leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
     ["<leader>bD"] = {
